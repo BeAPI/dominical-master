@@ -1,0 +1,48 @@
+{
+	"presets": [
+		["env", {
+			"targets": {
+				"browsers": ["last 2 versions", "ie >= 11"]
+			}
+		}],
+		"stage-0",
+		"react"
+	],
+	"plugins": [
+		["lodash", { "id": ["lodash", "recompose"] }]
+	],
+	"env": {
+		"production-cjs": {
+			"presets": [
+				["env", {
+					"targets": {
+						"browsers": ["last 2 versions", "ie >= 11"]
+					}
+				}],
+				"stage-0",
+				"react"
+			],
+			"plugins": [
+				"transform-react-remove-prop-types",
+				"transform-react-constant-elements"
+			]
+		},
+		"production-es6": {
+			"presets": [
+				["env", {
+					"targets": {
+						"browsers": ["last 2 versions", "ie >= 11"]
+					},
+					"modules": false
+				}],
+				"stage-0",
+				"react"
+			],
+			"plugins": [
+				["lodash", { "id": ["lodash", "recompose"] }],
+				"transform-react-remove-prop-types",
+				"transform-react-constant-elements"
+			]
+		}
+	}
+}
