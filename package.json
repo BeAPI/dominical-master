@@ -18,7 +18,7 @@
     "prepublishOnly": "npm run fullbuild"
   },
   "author": "BeAPI <cto@beapi.fr>",
-  "license": "MIT",
+  "license": "GPL-2.0",
   "devDependencies": {
     "@storybook/react": "^3.2.12",
     "babel-core": "^6.24.0",
@@ -63,5 +63,16 @@
     "react-moment-proptypes": "^1.5.0",
     "recompose": ">=0.23.1",
     "render-if": "^0.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeAPI/dominical-master.git"
+  },
+  "keywords": [
+    "calendar"
+  ],
+  "bugs": {
+    "url": "https://github.com/BeAPI/dominical-master/issues"
+  },
+  "homepage": "https://github.com/BeAPI/dominical-master#readme"
 }
